@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja desapareciending!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $('.row img').on('click', function(){
+                $(this).fadeOut(600);
+            })
+            $('#re-ninja').on('click', function(){
+                $('.row img').fadeIn();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>JQuery - assignment 1</h1>
+        </div>
+        <div class="row m-3">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+        </div>
+        <div class="row m-3">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+            <img class="ninja" src="ninja.jpg" alt="Beverly Hills Ninja">
+        </div>
+        <div class="row">
+            <div class="col-3 p-3">
+                <button id="re-ninja" class="btn-success">Restore!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
